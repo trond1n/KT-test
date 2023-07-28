@@ -1,0 +1,13 @@
+@import "../variables";
+
+.button {
+  width: 203px;
+  height: 45px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+}
+
+.pink {
+  background-color: $pink;
+}

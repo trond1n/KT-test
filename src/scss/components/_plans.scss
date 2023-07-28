@@ -1,0 +1,111 @@
+@import "../variables";
+
+.plans {
+  padding: 52px 0 52px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .items {
+  
+    padding: 33px 0 45px;
+    overflow: hidden;
+    .plan__block {
+      background: white;
+      margin-right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      width: 350px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+      .info {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0.02em;
+          text-align: left;
+        }
+        .speed {
+          font-family: Open Sans;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #acacac;
+        }
+        span {
+          font-size: 25px;
+          font-weight: 500;
+          line-height: 38px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: $pink;
+        }
+        .describe {
+          font-family: Open Sans;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.02em;
+          text-align: left;
+        }
+        form {
+          margin-top: 24px;
+          display: flex;
+          align-items: start;
+          input {
+            margin-right: 10px;
+            width: 23px;
+            height: 23px;
+          }
+          label {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            max-width: 127px;
+          }
+        }
+        .price {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 60px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 10px;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #55555580;
+          }
+        }
+        .notice {
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0.02em;
+          text-align: left;
+          color: #55555580;
+        }
+      }
+    }
+  }
+}

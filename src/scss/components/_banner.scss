@@ -1,0 +1,25 @@
+@import "../variables";
+
+.banner {
+  padding: 90px 50px;
+  background-color: $gray;
+  .content {
+    display: flex;
+    align-items: center;
+    .info {
+      h1 {
+        font-weight: bold;
+        font-size: 30px;
+        max-width: 435px;
+      }
+      ul {
+        margin: 10px 0 30px;
+        li {
+          list-style: inside;
+          font-size: 16px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
