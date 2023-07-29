@@ -1,9 +1,9 @@
 import "./scss/app.scss";
-import { Header, Banner, Plans } from "./components";
+import { Header, Banner, Plans, Feedback, Footer } from "./components";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 const App = () => {
   return (
@@ -11,6 +11,8 @@ const App = () => {
       <Header />
       <Banner />
       <Plans />
+      <Feedback />
+      <Footer />
     </div>
   );
 };

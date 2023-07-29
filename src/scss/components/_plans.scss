@@ -11,10 +11,11 @@
     text-align: left;
   }
   .items {
-  
+   
     padding: 33px 0 45px;
     overflow: hidden;
     .plan__block {
+      opacity: 0.3;
       background: white;
       margin-right: 30px;
       display: flex;
@@ -24,6 +25,7 @@
       width: 350px;
       border-radius: 10px;
       box-shadow: 0px 5px 8px 0px rgba(34, 60, 80, 0.2);
+
       .info {
         margin-bottom: 20px;
         h2 {
@@ -107,5 +109,9 @@
         }
       }
     }
+    .plan__block.is-selected{
+opacity: 1;
+    }
   }
+  
 }
