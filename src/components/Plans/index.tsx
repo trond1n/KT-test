@@ -8,8 +8,9 @@ const flickityOptions = {
   // // disable previous & next buttons and dots
   prevNextButtons: false,
   // pageDots: false,
-  groupCells: 2,
-  wrapAround:true
+  // groupCells: 2,
+  // wrapAround:true,
+  cellAlign: 'left'
 };
 const data = [
   {

@@ -1,7 +1,7 @@
 @import "../variables";
 
 .plans {
-  padding: 52px 0 52px;
+  padding: 52px 0 52px 45px;
 
   h2 {
     font-size: 28px;
@@ -9,14 +9,16 @@
     line-height: 42px;
     letter-spacing: 0.02em;
     text-align: left;
+    color: $black;
   }
   .items {
-   
+    .flickity-viewport {
+      padding-left: 5px;
+    }
     padding: 33px 0 45px;
     overflow: hidden;
     .plan__block {
-      cursor:grab;
-      opacity: 0.3;
+      cursor: grab;
       background: white;
       margin-right: 30px;
       display: flex;
@@ -46,6 +48,7 @@
           color: #acacac;
         }
         span {
+          opacity: 1;
           font-size: 25px;
           font-weight: 500;
           line-height: 38px;
@@ -60,6 +63,7 @@
           line-height: 20px;
           letter-spacing: 0.02em;
           text-align: left;
+          color: #555555;
         }
         form {
           margin-top: 24px;
@@ -69,8 +73,7 @@
             margin-right: 10px;
             width: 23px;
             height: 23px;
-  cursor: pointer;
-
+            cursor: pointer;
           }
           label {
             font-size: 14px;
@@ -112,9 +115,74 @@
         }
       }
     }
-    .plan__block.is-selected{
-opacity: 1;
+    .plan__block.is-selected {
+      opacity: 1;
     }
   }
-  
+  .items :nth-child(3) {
+    opacity: 0.3;
+  }
+  @media (max-width: 768px) {
+    .items :nth-child(3) {
+      opacity: 1;
+    }
+  }
+  @media (max-width: 500px) {
+    padding: 20px 0 20px 10px;
+    h2 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .items {
+      .plan__block {
+        max-width: 204px;
+        padding: 20px;
+        margin-right: 10px;
+        .info {
+          margin-bottom: 10px;
+          h2 {
+            font-size: 16px;
+            line-height: 24px;
+          }
+          .speed {
+            font-size: 10px;
+            line-height: 15px;
+          }
+          span {
+            font-size: 18px;
+            line-height: 27px;
+          }
+          .describe {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          form {
+            margin-top: 10px;
+
+            label {
+              font-size: 12px;
+              line-height: 18px;
+
+              // max-width: 127px;
+            }
+          }
+          .price {
+            font-size: 25px;
+            line-height: 37.5px;
+            display: flex;
+            align-items: center;
+
+            span {
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+          .notice {
+            font-size: 10px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
 }
