@@ -18,6 +18,8 @@
     display: flex;
     margin-top: 20px;
     button {
+      cursor: pointer;
+
       color: $black;
 
       width: 147px;
@@ -68,10 +70,12 @@
       margin-top: 20px;
       display: flex;
       align-items: center;
+
       input {
         width: 23px;
         height: 23px;
         border: none;
+        cursor: pointer;
       }
       label {
         font-size: 14px;
@@ -83,6 +87,7 @@
         span {
           text-decoration: underline;
           color: #989898;
+          cursor: pointer;
         }
       }
     }
