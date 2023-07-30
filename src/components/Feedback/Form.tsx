@@ -67,6 +67,7 @@ const Form: React.FC = () => {
       </div>
 
       <Button title={"Отправить"} color={"pink"} type="submit" />
+      <p className="rules">Нажимая кнопку “Отправить” вы соглашаетесь на условия <span>обработки данных</span></p>
     </form>
   );
 };

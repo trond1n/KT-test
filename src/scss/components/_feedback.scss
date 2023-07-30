@@ -17,12 +17,12 @@
   .buttons {
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
     button {
       cursor: pointer;
 
       color: $black;
-
-      width: 147px;
+      padding: 0 40px;
       height: 35px;
       border-radius: 10px;
       margin-right: 10px;
@@ -42,6 +42,8 @@
   form {
     display: flex;
     margin-top: 20px;
+    .rules {
+    display: none;}
     .inputs {
       input {
         height: 45px;
@@ -89,6 +91,96 @@
           color: #989898;
           cursor: pointer;
         }
+      }
+    }
+  }
+  @media (max-width: 900px) {
+    form {
+      align-items: center;
+      justify-content: center;
+
+      .inputs {
+        input {
+          margin-right: 0px;
+        }
+        .name {
+          width: 352px;
+        }
+        .phone {
+          margin-top: 10px;
+        }
+      }
+      .checkbox {
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  @media (max-width: 817px) {
+    .buttons {
+      margin-top: 10px;
+      button {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 580px) {
+    h2{
+font-size: 18px;
+line-height: 27px;
+
+    }
+    form {
+      margin: 0 auto;
+      margin-top: 10px;
+      flex-direction: column;
+      .checkbox {
+        display: none;
+      }
+      .rules {
+        display: block;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #989898;
+
+        span {
+          text-decoration: underline;
+          color: #989898;
+          cursor: pointer;
+        }
+      }
+      .inputs {
+        margin-bottom: 10px;
+        width: 100%;
+
+        .name {
+          width: 100%;
+        }
+        .phone {
+          width: 100%;
+        }
+      }
+    }
+    padding: 20px 10px;
+    .buttons {
+      margin-top: 0px;
+      justify-content: space-between;
+      button {
+margin-right: 0;
+
+        margin-top: 10px;
+      }
+    }
+  }
+  @media (max-width: 522px) {
+    .buttons {
+      button {
+        padding: 0 10px;
       }
     }
   }
