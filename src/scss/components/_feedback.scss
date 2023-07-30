@@ -135,6 +135,11 @@ line-height: 27px;
       margin: 0 auto;
       margin-top: 10px;
       flex-direction: column;
+      button{
+        width: 100%;
+        font-size: 12px;
+
+      }
       .checkbox {
         display: none;
       }

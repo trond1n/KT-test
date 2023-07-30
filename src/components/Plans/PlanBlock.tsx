@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../ui/Button";
 type PlanBlockProps = {
   title: string;
   speed: string;
@@ -13,6 +12,11 @@ const PlanBlock: React.FC<PlanBlockProps> = ({
   describe,
   price,
 }) => {
+  const [select, setSelect] = React.useState(true);
+  const onClickButton = () => {
+    setSelect(!select);
+  };
+
   return (
     <div className="plan__block">
       <div className="info">
@@ -33,7 +37,14 @@ const PlanBlock: React.FC<PlanBlockProps> = ({
         </p>
       </div>
 
-      <Button title="Выбрать тариф" color="pink" />
+      {/* <Button title={"Выбрать тариф"} />
+       */}
+      <button
+        onClick={onClickButton}
+        className={`button ${select ? "pink" : "blue"}`}
+      >
+        {`${select ? "Выбрать тариф" : "Тариф выбран"}`}
+      </button>
     </div>
   );
 };

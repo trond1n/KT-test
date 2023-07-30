@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Button from "../ui/Button";
 
 const Form: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +6,7 @@ const Form: React.FC = () => {
     phone: "",
     agreementChecked: false,
   });
+  const [select, setSelect] = React.useState(true);
 
   const handleInputChange = (event: {
     target: { name: any; value: any; type: any; checked: any };
@@ -24,7 +24,9 @@ const Form: React.FC = () => {
     event.preventDefault();
     console.log("Форма отправлена:", formData);
     setFormData({ name: "", phone: "", agreementChecked: false });
+    setSelect(!select);
   };
+  const onClickButton = () => {};
 
   return (
     <form onSubmit={handleSubmit}>
@@ -66,8 +68,18 @@ const Form: React.FC = () => {
         </div>
       </div>
 
-      <Button title={"Отправить"} color={"pink"} type="submit" />
-      <p className="rules">Нажимая кнопку “Отправить” вы соглашаетесь на условия <span>обработки данных</span></p>
+    
+      <button
+        type="submit"
+        onClick={onClickButton}
+        className={`button ${select ? "pink" : "blue"}`}
+      >
+        {`${select ? "Отправить" : "Отправлено"}`}
+      </button>
+      <p className="rules">
+        Нажимая кнопку “Отправить” вы соглашаетесь на условия{" "}
+        <span>обработки данных</span>
+      </p>
     </form>
   );
 };
