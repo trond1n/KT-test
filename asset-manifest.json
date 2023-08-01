@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kt-test/static/css/main.f145b6bb.css",
+    "main.js": "/kt-test/static/js/main.b6295653.js",
+    "static/js/679.632a5417.chunk.js": "/kt-test/static/js/679.632a5417.chunk.js",
+    "index.html": "/kt-test/index.html",
+    "main.f145b6bb.css.map": "/kt-test/static/css/main.f145b6bb.css.map",
+    "main.b6295653.js.map": "/kt-test/static/js/main.b6295653.js.map",
+    "679.632a5417.chunk.js.map": "/kt-test/static/js/679.632a5417.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f145b6bb.css",
+    "static/js/main.b6295653.js"
+  ]
+}
