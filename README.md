@@ -2,10 +2,10 @@
 Верстка лендинга
 
 ## Стэк
-React
-Typescript
-Flickity (слайдер)
-БЭМ
+React  
+Typescript  
+Flickity (слайдер)  
+БЭМ  
 
 ## Ссылки
 Ссылка на [gh-pages](https://trond1n.github.io/kt-test/).  
