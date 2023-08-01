@@ -1,6 +1,8 @@
 @import "../variables";
 
 .button {
+  cursor: pointer;
+
   width: 203px;
   height: 45px;
   border-radius: 5px;
@@ -10,4 +12,7 @@
 
 .pink {
   background-color: $pink;
+}
+.blue {
+  background-color: $blue;
 }

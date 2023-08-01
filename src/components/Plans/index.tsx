@@ -3,11 +3,14 @@ import PlanBlock from "./PlanBlock";
 import Flickity from "react-flickity-component";
 const flickityOptions = {
   draggable: true,
-  freeScroll: true,
-  contain: true,
-  // disable previous & next buttons and dots
+  // freeScroll: true,
+  // contain: true,
+  // // disable previous & next buttons and dots
   prevNextButtons: false,
-  pageDots: false,
+  // pageDots: false,
+  // groupCells: 2,
+  // wrapAround:true,
+  cellAlign: 'left'
 };
 const data = [
   {
@@ -38,7 +41,7 @@ const Plans: React.FC = () => {
       <h2>Тарифные планы</h2>
 
       <Flickity
-        className={"items"} // default ''
+        className={"items"} 
         elementType={"div"}
         options={flickityOptions}
       >

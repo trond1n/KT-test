@@ -1,7 +1,10 @@
 import React from "react";
-import Button from "./ui/Button";
 
 const Banner: React.FC = () => {
+  const [select, setSelect] = React.useState(true);
+  const onClickButton = () => {
+    setSelect(!select);
+  };
   return (
     <div className="banner">
       <div className="content">
@@ -12,7 +15,12 @@ const Banner: React.FC = () => {
             <li>безлимит подключенных устройств</li>
             <li>комфортная поддержка 24/7</li>
           </ul>
-          <Button title="Подробнее" color="pink" />
+          <button
+            onClick={onClickButton}
+            className={`button ${select ? "pink" : "blue"}`}
+          >
+            Подробнее
+          </button>
         </div>
         <img src="img/banner.png" alt="banner" />
       </div>

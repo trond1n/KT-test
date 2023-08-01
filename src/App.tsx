@@ -1,16 +1,14 @@
 import "./scss/app.scss";
-import { Header, Banner, Plans } from "./components";
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
+import { Header, Banner, Plans, Feedback, Footer } from "./components";
 const App = () => {
   return (
     <div className="App">
       <Header />
       <Banner />
       <Plans />
+      <Feedback />
+
+      <Footer />
     </div>
   );
 };
